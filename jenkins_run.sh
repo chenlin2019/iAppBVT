@@ -1,4 +1,4 @@
-pwd=$(pwd)
+pwd=$`pwd`
 apk=$pwd\Android_build\AndroidSampleApp\app\build\outputs\apk\debug\app-debug.apk
 {
   adb uninstall com.appsflyer.androidsampleapp
