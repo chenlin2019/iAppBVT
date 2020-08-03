@@ -5,20 +5,20 @@
 
 cd ..
 cd ..
-pwd=`pwd`
+export pwd=`pwd`
 echo $pwd
-apk=$pwd/Android_build/AndroidSampleApp/app/build/outputs/apk/debug/app-debug.apk
+export apk=$pwd/Android_build/AndroidSampleApp/app/build/outputs/apk/debug/app-debug.apk
 echo $apk
 
-
+#D:/adb/adb.exe: error while loading shared libraries: ?: cannot open shared object file: No such file or directory
 {
-  /d/adb/adb.exe uninstall com.appsflyer.androidsampleapp
+  /d/adb/adb uninstall com.appsflyer.androidsampleapp
 } ||{
     echo 'no package on the devices'
 }
 
 
-/d/adb/adb.exe install $apk
+/d/adb/adb install $apk
 
 cd iAppBVT/iAppBVT/
 
