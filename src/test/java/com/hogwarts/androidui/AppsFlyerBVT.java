@@ -1,5 +1,4 @@
 package com.hogwarts.androidui;
-
 import com.hogwarts.base.AndroidUIBase;
 import com.hogwarts.base.AndroidUITasks;
 import com.hogwarts.base.Tools;
