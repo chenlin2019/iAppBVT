@@ -1,5 +1,7 @@
 pwd=$`pwd`
-apk=$pwd\..\Android_build\AndroidSampleApp\app\build\outputs\apk\debug\app-debug.apk
+echo=$pwd
+apk=$pwd\..\..\Android_build\AndroidSampleApp\app\build\outputs\apk\debug\app-debug.apk
+echo=$apk
 {
   adb uninstall com.appsflyer.androidsampleapp
 } ||{
